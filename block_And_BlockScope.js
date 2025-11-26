@@ -9,6 +9,13 @@ function demonstrateBlockScope (){
     console. log("this is Global Scope",a);
     console. log("these are Block Scope variables",b,c);
 
+    function innerFunction(){
+        let a= 45;
+        var b= 90;
+        console. log("this is Inner Function Scope",a);
+        console. log("these are Inner Function Block Scope variables",b,c);
+    }
+
 }
 
 demonstrateBlockScope();
